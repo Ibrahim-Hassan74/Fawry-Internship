@@ -1,6 +1,8 @@
 package entities;
 
-public class CartItem {
+import serviceContracts.IShippableItem;
+
+public class CartItem implements IShippableItem {
     private Product product;
     private int quantity;
 
@@ -34,6 +36,16 @@ public class CartItem {
     }
 
     public double getTotalWeight() {
+        return product.getWeightInGrams() * quantity;
+    }
+
+    @Override
+    public String getName() {
+        return quantity + "x " + product.getName();
+    }
+
+    @Override
+    public double getWeight() {
         return product.getWeightInGrams() * quantity;
     }
 }
