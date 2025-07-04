@@ -1,9 +1,17 @@
+import entities.Product;
+import service.ProductService;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.printf("Hello and welcome!");
+        var product = new ProductService();
+//        String path = ClassLoader.getSystemResource().getPath();
+        var products = product.loadProducts();
 
-        for (int i = 1; i <= 5; i++) {
-            System.out.println("i = " + i);
+        System.out.println("Available Products:");
+        for (Product p : products) {
+            System.out.printf("[%d] %s - $%.2f - Quantity: %d\n",
+                    p.getId(), p.getName(), p.getPrice(), p.getQuantity());
         }
+
     }
 }

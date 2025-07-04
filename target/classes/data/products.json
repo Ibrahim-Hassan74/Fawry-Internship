@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Cheese",
+    "price": 100,
+    "quantity": 5,
+    "isExpirable": true,
+    "expiryDate": "2025-12-01",
+    "isShippable": true,
+    "weightInGrams": 200
+  },
+  {
+    "id": 2,
+    "name": "Biscuits",
+    "price": 150,
+    "quantity": 3,
+    "isExpirable": true,
+    "expiryDate": "2025-10-15",
+    "isShippable": false,
+    "weightInGrams": 700
+  },
+  {
+    "id": 3,
+    "name": "TV",
+    "price": 300,
+    "quantity": 2,
+    "isExpirable": false,
+    "expiryDate": null,
+    "isShippable": true,
+    "weightInGrams": 5000
+  },
+  {
+    "id": 4,
+    "name": "Mobile",
+    "price": 800,
+    "quantity": 1,
+    "isExpirable": false,
+    "expiryDate": null,
+    "isShippable": true,
+    "weightInGrams": 400
+  },
+  {
+    "id": 5,
+    "name": "Mobile Scratch Card",
+    "price": 50,
+    "quantity": 10,
+    "isExpirable": false,
+    "expiryDate": null,
+    "isShippable": false,
+    "weightInGrams": 0
+  },
+  {
+    "id": 6,
+    "name": "Milk",
+    "price": 60,
+    "quantity": 8,
+    "isExpirable": true,
+    "expiryDate": "2024-12-31",
+    "isShippable": true,
+    "weightInGrams": 1000
+  },
+  {
+    "id": 7,
+    "name": "Laptop",
+    "price": 1500,
+    "quantity": 1,
+    "isExpirable": false,
+    "expiryDate": null,
+    "isShippable": true,
+    "weightInGrams": 2500
+  },
+  {
+    "id": 8,
+    "name": "Magazine",
+    "price": 30,
+    "quantity": 20,
+    "isExpirable": false,
+    "expiryDate": null,
+    "isShippable": false,
+    "weightInGrams": 300
+  }
+]
