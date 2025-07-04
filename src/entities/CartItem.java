@@ -35,10 +35,6 @@ public class CartItem implements IShippableItem {
         return product.isShippable();
     }
 
-    public double getTotalWeight() {
-        return product.getWeightInGrams() * quantity;
-    }
-
     @Override
     public String getName() {
         return quantity + "x " + product.getName();

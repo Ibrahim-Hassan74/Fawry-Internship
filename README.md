@@ -1,12 +1,15 @@
 # Shopping App - Fawry Internship Challenge
 
-This is a console-based Java application simulating an e-commerce shopping system, built for the Fawry Quantum Internship challenge.
+This is a console-based Java application simulating an e-commerce shopping system, built for the Fawry Internship
+challenge.
 
 ## 🔍 Description
 
-The application allows a customer to log in or register, view and purchase products, and proceed to checkout with full validation, shipping, and receipt generation.
+The application allows a customer to log in or register, view and purchase products, and proceed to checkout with full
+validation, shipping, and receipt generation.
 
-This project goes beyond the base requirements by adding an interactive user experience and simulating real-world e-commerce behaviors.
+This project goes beyond the base requirements by adding an interactive user experience and simulating real-world
+e-commerce behaviors.
 
 ---
 
@@ -27,15 +30,15 @@ This project goes beyond the base requirements by adding an interactive user exp
 * View available products (skips out-of-stock)
 * Cart validation before checkout:
 
-  * Cart must not be empty
-  * No expired products
-  * Quantity must be available in stock
-  * Sufficient balance
+    * Cart must not be empty
+    * No expired products
+    * Quantity must be available in stock
+    * Sufficient balance
 * After checkout:
 
-  * Receipt is printed line by line
-  * Products are shipped if shippable
-  * Product quantities are reduced and saved to JSON
+    * Receipt is printed line by line
+    * Products are shipped if shippable
+    * Product quantities are reduced and saved to JSON
 
 ### 📦 Product Handling
 
@@ -46,10 +49,10 @@ This project goes beyond the base requirements by adding an interactive user exp
 
 * After login, user chooses to:
 
-  * Buy products
-  * Add funds
-  * Checkout
-  * Exit
+    * Buy products
+    * Add funds
+    * Checkout
+    * Exit
 * After each operation, user is asked to continue or exit
 
 ---
@@ -118,4 +121,4 @@ These additions make the app more complete and user-friendly.
 ## 👨‍💻 Developed by
 
 Ibrahim Hassan
-Fawry Quantum Internship Candidate
+Fawry Internship Candidate

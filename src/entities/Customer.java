@@ -41,19 +41,6 @@ public class Customer {
         return balance;
     }
 
-    public boolean checkPassword(String input) {
-        return password.equals(input);
-    }
-
-    // Setters
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
-    }
-
     // Business logic
     public void pay(double amount) {
         if (amount > balance) throw new IllegalArgumentException("Insufficient balance.");

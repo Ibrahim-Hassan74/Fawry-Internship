@@ -21,7 +21,7 @@
     "id": 5,
     "name": "Mobile Scratch Card",
     "price": 50.0,
-    "quantity": 10,
+    "quantity": 6,
     "isExpirable": false,
     "isShippable": false,
     "weightInGrams": 0.0

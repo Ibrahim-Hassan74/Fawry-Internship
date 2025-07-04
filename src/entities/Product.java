@@ -56,14 +56,6 @@ public class Product {
         return quantity;
     }
 
-    public boolean isExpirable() {
-        return isExpirable;
-    }
-
-    public LocalDate getExpiryDate() {
-        return expiryDate;
-    }
-
     public boolean isShippable() {
         return isShippable;
     }
