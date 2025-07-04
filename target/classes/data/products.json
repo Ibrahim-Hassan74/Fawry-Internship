@@ -1,15 +1,5 @@
 [
   {
-    "id": 2,
-    "name": "Biscuits",
-    "price": 150.0,
-    "quantity": 3,
-    "isExpirable": true,
-    "expiryDate": "2025-10-15",
-    "isShippable": false,
-    "weightInGrams": 700.0
-  },
-  {
     "id": 3,
     "name": "TV",
     "price": 300.0,
