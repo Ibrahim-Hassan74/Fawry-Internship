@@ -18,8 +18,15 @@ public class JsonHelper {
                     return LocalDate.parse(json.getAsString(), DateTimeFormatter.ISO_LOCAL_DATE);
                 }
             })
+            .registerTypeAdapter(LocalDate.class, new JsonSerializer<LocalDate>() {
+                @Override
+                public JsonElement serialize(LocalDate src, Type typeOfSrc, JsonSerializationContext context) {
+                    return new JsonPrimitive(src.format(DateTimeFormatter.ISO_LOCAL_DATE));
+                }
+            })
             .setPrettyPrinting()
             .create();
+
 
     public static <T> T readJson(String filePath, Type type) {
         try (Reader reader = new FileReader(filePath)) {

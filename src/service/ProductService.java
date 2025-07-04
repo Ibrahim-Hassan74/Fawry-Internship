@@ -14,8 +14,15 @@ public class ProductService implements IProductService {
 
     @Override
     public List<Product> loadProducts() {
-        products = JsonHelper.readJson(path, new TypeToken<List<Product>>() {
+//        if (products.isEmpty()) {
+        List<Product> loaded = JsonHelper.readJson(path, new TypeToken<List<Product>>() {
         }.getType());
+        if (loaded != null) {
+            products = loaded.stream()
+                    .filter(p -> p.getQuantity() > 0)
+                    .toList();
+        }
+//        }
         return products;
     }
 
@@ -25,6 +32,15 @@ public class ProductService implements IProductService {
                 .filter(p -> p.getId() == id)
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public void saveProducts() {
+        List<Product> availableProducts = products.stream()
+                .filter(p -> p.getQuantity() > 0)
+                .toList();
+
+        JsonHelper.writeJson(path, availableProducts);
     }
 
 }
